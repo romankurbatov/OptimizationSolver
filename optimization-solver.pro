@@ -9,5 +9,6 @@ SUBDIRS =          \
     src/compact    \
     src/problem1   \
     src/solver1    \
+    src/roman      \
     src/controller \
 
