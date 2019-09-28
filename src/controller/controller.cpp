@@ -50,7 +50,8 @@ bool checkTable(QSqlRecord record)
 
 void Controller::on_browseButton_clicked()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, "Select file with problem", "", "DLL (*.dll)");
+    QString fileName = QFileDialog::getOpenFileName(this, "Select file with problem", "",
+        "Windows Dynamic Link Libraries(*.dll);;Linux Shared Libraries(*.so)");
     editProblem->setText(fileName);
 }
 
