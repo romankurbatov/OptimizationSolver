@@ -200,17 +200,18 @@ int Solver1::solve() {
                     return ERR_ANY_OTHER;
                 }
 
-                if (resS <= resC) {
+                delete tmpMS;
+                delete tmpS;
+
+                if (fabs(resS) < fabs(resC)) {
                     delete _prev;
                     _prev = _curr;
                     _curr = prS;
                     break;
                 } else {
+                    delete prS;
                     alpha *= lambda;
                 }
-
-                delete tmpMS;
-                delete tmpS;
             }
 
             delete gradV;
@@ -325,17 +326,18 @@ int Solver1::solve() {
                     return ERR_ANY_OTHER;
                 }
 
-                if (resS <= resC) {
+                delete tmpMS;
+                delete tmpS;
+
+                if (fabs(resS) < fabs(resC)) {
                     delete _prev;
                     _prev = _curr;
                     _curr = prS;
                     break;
                 } else {
+                    delete prS;
                     alpha *= lambda;
                 }
-
-                delete tmpMS;
-                delete tmpS;
             }
 
             delete gradV;
