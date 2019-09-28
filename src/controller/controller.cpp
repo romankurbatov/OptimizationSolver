@@ -296,7 +296,7 @@ void Controller::on_solveButton_clicked()
                               tr("Failed to get dialog from solver for setting parameters."));
         return;
     }
-    unsigned int dimArgs, dimParams;
+    size_t dimArgs, dimParams;
     if (problem->getArgsDim(dimArgs) != ERR_OK) {
         release(problem_brocker, solver_brocker);
         QMessageBox::critical(this, tr("Failed to get dimension"),

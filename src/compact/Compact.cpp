@@ -33,7 +33,7 @@ namespace {
 
 		static unsigned const MAX_POINTS_AMOUNT = UINT_MAX;
 		static unsigned const PRECISION_DIVIDER = 1000;
-		static double const DOUBLE_EPS = 1e-8;
+        static double constexpr DOUBLE_EPS = 1e-8;
 
 		unsigned _dim;						 // dimension of vectors in compact
 		unsigned _pointsAmount;				 // total amount of points in compact

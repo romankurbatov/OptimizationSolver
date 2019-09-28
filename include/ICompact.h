@@ -68,6 +68,8 @@ public:
         else return src->clone();
     }
 
+    class IIterator;
+
     virtual int deleteIterator(IIterator * pIter) = 0;
     virtual int getByIterator(IIterator const* pIter, IVector*& pItem) const = 0;
 

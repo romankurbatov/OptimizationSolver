@@ -10,6 +10,8 @@ MOC_DIR = ../../.build/controller/moc
 OBJECTS_DIR = ../../.build/controller/obj
 UI_DIR = ../../.build/controller/ui
 
+INCLUDEPATH += ../../include
+
 LIBS += -L../../lib -lvector -lset -lcompact -llog
 
 SOURCES += main.cpp \

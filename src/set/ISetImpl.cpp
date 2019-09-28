@@ -186,7 +186,7 @@ ISetImpl::IIterator* ISetImpl::end() {
         return NULL;
     }
     ISetImpl::IIteratorImpl* iterator
-            = new(std::nothrow) ISetImpl::IIteratorImpl::IIteratorImpl(this, _ptr_points.size() - 1);
+            = new(std::nothrow) ISetImpl::IIteratorImpl(this, _ptr_points.size() - 1);
     if (!iterator) {
         ILog::report("ISet.end: Not enough memory\n");
         return NULL;
@@ -201,7 +201,7 @@ ISetImpl::IIterator* ISetImpl::begin() {
         return NULL;
     }
     ISetImpl::IIteratorImpl* iterator
-            = new(std::nothrow) ISetImpl::IIteratorImpl::IIteratorImpl(this, 0);
+            = new(std::nothrow) ISetImpl::IIteratorImpl(this, 0);
     if (!iterator) {
         ILog::report("ISet.begin: Not enough memory\n");
         return NULL;

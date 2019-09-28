@@ -374,7 +374,7 @@ int Solver1::setProblem(IProblem * ptr) {
         ILog::report("ISolver.setProblem: Input parameter ptr is nullptr\n");
         return ERR_WRONG_PROBLEM;
     }
-    unsigned dim;
+    size_t dim;
     if (_args) {
         if (ptr->getArgsDim(dim) != ERR_OK) {
             ILog::report("ISolver.setProblem: Cannot check dimensions of arguments\n");
@@ -404,7 +404,8 @@ int Solver1::setParams(IVector const* params) {
         ILog::report("ISolver.setParams: Input parameter ptr is nullptr\n");
         return ERR_WRONG_ARG;
     }
-    unsigned int dim, dimArgs, dimParams, tmp;
+    size_t dimArgs, dimParams;
+    unsigned int dim, tmp;
     const double * coords;
     bool solveByArg;
     double epsilon;
@@ -505,7 +506,8 @@ int Solver1::setParams(IVector const* params) {
 }
 
 int Solver1::setParams(QString & str) {
-    unsigned int dim, dimArgs, dimArgs1, dimParams, dimParams1, tmp2;
+    size_t dimArgs, dimParams;
+    unsigned int dim, dimArgs1, dimParams1, tmp2;
     QString tmp;
     double * coords;
     bool solveByArg, ok;
