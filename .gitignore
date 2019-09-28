@@ -1,6 +1,9 @@
 /.build/
 /lib/*.so
 /lib/*.so.*
+/lib/*.dll
 Makefile
 /optimization-solver
 *.pro.user
+*.db
+log.txt
