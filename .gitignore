@@ -1,0 +1,6 @@
+/.build/
+/lib/*.so
+/lib/*.so.*
+Makefile
+/optimization-solver
+*.pro.user
