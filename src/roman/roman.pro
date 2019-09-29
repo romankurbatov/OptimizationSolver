@@ -12,4 +12,5 @@ DEFINES += DLL_LIBRARY
 INCLUDEPATH += ../../include
 
 SOURCES += \
-    MyVector.cpp
+    MyVector.cpp \
+    MySet.cpp
