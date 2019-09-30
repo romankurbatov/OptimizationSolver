@@ -13,4 +13,5 @@ INCLUDEPATH += ../../include
 
 SOURCES += \
     MyVector.cpp \
-    MySet.cpp
+    MySet.cpp \
+    MyCompact.cpp
