@@ -287,6 +287,12 @@ int MySet::getByIterator(const IIterator *pIter, IVector *&pItem) const {
 
     const int pos = (*iter_iter)->pos();
 
+    if (pos < 0 || pos >= mData.size())
+    {
+        ILog::report("MySet::getByIterator: Iterator position is out of range");
+        return ERR_OUT_OF_RANGE;
+    }
+
     if (!mData[pos]) {
         ILog::report("MySet::getByIterator: MySet internal error: iterator points to a deleted item");
         return ERR_ANY_OTHER;
