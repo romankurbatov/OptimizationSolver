@@ -12,8 +12,8 @@ UI_DIR = ../../.build/controller/ui
 
 INCLUDEPATH += ../../include
 
-#LIBS += -L../../lib -lvector -lset -lcompact -llog
-LIBS += -L../../lib -lroman -lcompact -llog
+LIBS += -L../../lib -lvector -lset -lcompact -llog
+#LIBS += -L../../lib -lroman -lcompact -llog
 
 SOURCES += main.cpp \
     controller.cpp \
