@@ -11,4 +11,5 @@ SUBDIRS =          \
     src/solver1    \
     src/roman      \
     src/controller \
+    src/problem2   \
 
