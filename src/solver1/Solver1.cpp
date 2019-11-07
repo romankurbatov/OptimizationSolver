@@ -203,7 +203,7 @@ int Solver1::solve() {
                 delete tmpMS;
                 delete tmpS;
 
-                if (fabs(resS) < fabs(resC)) {
+                if (resS < resC) {
                     delete _prev;
                     _prev = _curr;
                     _curr = prS;
@@ -329,7 +329,7 @@ int Solver1::solve() {
                 delete tmpMS;
                 delete tmpS;
 
-                if (fabs(resS) < fabs(resC)) {
+                if (resS < resC) {
                     delete _prev;
                     _prev = _curr;
                     _curr = prS;
