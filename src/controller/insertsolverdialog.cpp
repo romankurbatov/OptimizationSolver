@@ -30,6 +30,6 @@ QString InsertSolverDialog::methodPath() const
 void InsertSolverDialog::on_browseButton_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this, "Select file with solver", "",
-        "Windows Dynamic Link Libraries(*.dll);;Linux Shared Libraries(*.so)");
+        "Windows Dynamic Link Libraries(*.dll);;Linux Shared Libraries(*.so);;Mac OS X Dynamic Libraries(*.dylib)");
     ui.editPath->setText(fileName);
 }
