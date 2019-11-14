@@ -13,3 +13,5 @@ INCLUDEPATH += ../../include
 
 SOURCES += \
     Compact.cpp
+
+LIBS += -L../../lib -lroman -llog

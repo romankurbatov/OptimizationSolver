@@ -13,3 +13,5 @@ INCLUDEPATH += ../../include
 
 SOURCES += \
     Vector.cpp
+
+LIBS += -L../../lib -llog

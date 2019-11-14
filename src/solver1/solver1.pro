@@ -13,3 +13,5 @@ INCLUDEPATH += ../../include
 
 SOURCES += \
     Solver1.cpp
+
+LIBS += -L../../lib -lroman -lcompact -llog

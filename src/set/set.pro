@@ -13,3 +13,5 @@ INCLUDEPATH += ../../include
 
 SOURCES += \
     ISetImpl.cpp
+
+LIBS += -L../../lib -lvector -llog

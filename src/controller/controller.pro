@@ -8,7 +8,7 @@ TEMPLATE = app
 DESTDIR = ../..
 MOC_DIR = ../../.build/controller/moc
 OBJECTS_DIR = ../../.build/controller/obj
-UI_DIR = ../../.build/controller/ui
+#UI_DIR = ../../.build/controller/ui
 
 INCLUDEPATH += ../../include
 

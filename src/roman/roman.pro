@@ -14,3 +14,5 @@ INCLUDEPATH += ../../include
 SOURCES += \
     MyVector.cpp \
     MySet.cpp \
+
+LIBS += -L../../lib -llog

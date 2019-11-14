@@ -17,3 +17,5 @@ SOURCES += \
 
 HEADERS += \
     Problem2.h
+
+LIBS += -L../../lib -lroman -lcompact -llog
